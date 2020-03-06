@@ -1,0 +1,129 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	    ,{
+            "path" : "pages/questionInfo/questionInfo",
+            "style" : {
+				"navigationBarTitleText": "在线倾听"
+			}
+        }
+        ,{
+            "path" : "pages/index-hot/index-hot",
+            "style" : {
+				"navigationStyle": "custom"
+			}
+        }
+        ,{
+            "path" : "pages/userCenter/userCenter",
+            "style" : {
+				"navigationBarTitleText": "个人中心"
+			}
+        }
+        ,{
+            "path" : "pages/myQuestion/myQuestion",
+            "style" : {
+				"navigationBarTitleText": "我的问题"
+			}
+        }
+        ,{
+            "path" : "pages/myLiuyan/myLiuyan",
+            "style" : {
+				"navigationBarTitleText": "我的留言"
+			}
+        }
+        ,{
+            "path" : "pages/myFankui/myFankui",
+            "style" : {
+				"navigationBarTitleText": "我的反馈"
+			}
+        }
+        ,{
+            "path" : "pages/myCollect/myCollect",
+            "style" : {
+				"navigationBarTitleText": "我的收藏"
+			}
+        }
+        ,{
+            "path" : "pages/mySet/mySet",
+            "style" : {
+				"navigationBarTitleText": "基本资料"
+			}
+        }
+        ,{
+            "path" : "pages/fankuiInfo/fankuiInfo",
+            "style" : {
+				"navigationBarTitleText": "反馈详情"
+			}
+        }
+        ,{
+            "path" : "pages/myXiaoxi/myXiaoxi",
+            "style" : {
+				"navigationBarTitleText": "通知"
+			}
+        }
+        ,{
+            "path" : "pages/wdzl/wdzl",
+            "style" : {
+				"navigationBarTitleText": "问答专栏",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+								"text": "\ue409",
+								"fontSrc": "/static/uni.ttf",
+								"fontSize": "26px",
+								"color": "#FF4030"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/tiwen/tiwen",
+            "style" : {
+				"navigationBarTitleText": "提问"
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": ""
+			}
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" : {
+				"navigationBarTitleText": ""
+			}
+        }
+        ,{
+            "path" : "pages/register-smrz/register-smrz",
+            "style" : {
+				"navigationBarTitleText": ""
+			}
+        }
+        ,{
+            "path" : "pages/register-wsxx/register-wsxx",
+            "style" : {
+				"navigationBarTitleText": ""
+			}
+        }
+        ,{
+            "path" : "pages/login-yzm/login-yzm",
+            "style" : {
+				"navigationBarTitleText": ""
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "西山在线倾听",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	}
+}
