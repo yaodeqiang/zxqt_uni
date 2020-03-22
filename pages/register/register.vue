@@ -10,10 +10,16 @@
 		<form @submit="" @reset="">
 			<view class="loginBox">
 				<view class="loginInput">
-					<input type="text" placeholder="请输入手机号" placeholder-style="color:#999;" />
+					<input type="text" placeholder="手机号" v-model="form.phone" placeholder-style="color:#999;" />
+				</view>
+				<view class="loginInput">
+					<input type="text" placeholder="用户名" v-model="form.username" placeholder-style="color:#999;" />
+				</view>
+				<view class="loginInput">
+					<input type="password" placeholder="密码" v-model="form.password" placeholder-style="color:#999;" />
 				</view>
 				<view class="loginInput clear">
-					<input class="fl" type="text" placeholder="请输入验证码" placeholder-style="color:#999;" />
+					<input class="fl" type="text" placeholder="短信验证码" placeholder-style="color:#999;" />
 					<button class="yanzhengma fr" type="primary" hover-class="none" @click="getCode" :disabled="disabled">{{codeTextShow == 0 ? codeText.getCode : (codeTextShow == 1 ?count + codeText.countDown:codeText.getAgain)}}</button>
 				</view>
 				<view class="clear"></view>
@@ -28,8 +34,10 @@
 	export default {
 		data() {
 			return {
+				form: {},
+				
 				codeText :{
-					getCode:'获取验证码',
+					getCode:'获验证码',
 					countDown:'s重新获取',
 					getAgain:'重新获取'
 				},
